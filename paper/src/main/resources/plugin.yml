@@ -1,0 +1,24 @@
+name: DomesticationInnovation
+version: '1.8.0'
+main: com.github.alexthe668.domesticationinnovation.paper.DomesticationInnovationPaper
+description: Fork of original DI mod, fixing crashes. Vastly improves upon and compliments tameable mobs, both from vanilla and other mods.
+authors:
+  - Spock (Current Version)
+  - Alexthe668
+  - FallenReaper
+  - Yosh
+  - cationick
+website: https://www.curseforge.com/minecraft/mc-mods/domestication-innovation-fixed
+
+api-version: '1.21'
+
+commands:
+  dicmd:
+    description: Command pet animals with /dicmd
+    usage: /dicmd <target>
+    aliases: [pet-cmd]
+
+permissions:
+  domesticationinnovation.admin:
+    description: Admin permissions for DomesticationInnovation
+    default: op

@@ -1,4 +1,4 @@
-# eclipse
+# Eclipse
 bin
 *.launch
 .settings
@@ -6,20 +6,56 @@ bin
 .classpath
 .project
 
-# idea
+# IntelliJ IDEA
 out
 *.ipr
 *.iws
 *.iml
 .idea
 
-# gradle
+# Gradle
 build
 .gradle
+gradle-app.setting
 
-# other
-eclipse
+# Forge/Minecraft
 run
-
-# Files from Forge MDK
+eclipse
 forge*changelog.txt
+
+# Build outputs
+*.jar
+!paper/build/libs/domesticationinnovation-paper-*.jar
+*.war
+*.zip
+*.tar.gz
+
+# Logs
+*.log
+logs/
+*.out
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.swp
+*.swo
+*~
+.classpath
+.project
+.settings
+
+# Build artifacts
+dist/
+target/
+*.class
+*.jar
+*.war
+
+# IDE
+.vscode/
+*.code-workspace
+.idea/

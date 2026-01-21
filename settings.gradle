@@ -1,0 +1,4 @@
+rootProject.name = "DomesticationInnovation"
+include 'paper'
+// include 'forge'  // Temporarily disabled for Paper testing
+
