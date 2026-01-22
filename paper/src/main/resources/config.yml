@@ -1,0 +1,46 @@
+# DomesticationInnovation - Paper Plugin Configuration
+
+# Enable/disable features
+features:
+  tame_animals: true
+  pet_beds: true
+  pet_commands: true
+  enchantments: true
+
+# Taming items (items that can be used to tame animals)
+taming_items:
+  - "NAME_TAG"
+  - "LEAD"
+
+# Pet command options
+commands:
+  # 0 = Free (pet does whatever)
+  # 1 = Sit (pet stays in place)
+  # 2 = Follow (pet follows owner)
+  default_state: 0
+
+# Enchantments available for pets
+enchantments:
+  fireproof:
+    description: "Pet becomes immune to fire"
+    max_level: 1
+  
+  amphibious:
+    description: "Pet can breathe underwater and swim better"
+    max_level: 1
+  
+  swift:
+    description: "Pet moves faster"
+    max_level: 3
+
+# Pet interaction prefix
+prefix:
+  default: "&6[DomesticationInnovation]"  # Default prefix for all pet messages
+  separator: ":"                         # Separator between prefix and message
+
+# Messages
+messages:
+  pet_tamed: "&eYou have tamed this &c{pet_type}&e!"
+  pet_command_free: "&e{pet_type} is now &bFREE&e!"
+  pet_command_sit: "&e{pet_type} is now &bSITTING&e!"
+  pet_command_follow: "&e{pet_type} is now &bFOLLOWING&e!"

@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+archivesBaseName = 'domesticationinnovation-paper'
+version = '1.8.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "PaperMC"
+        url = "https://repo.papermc.io/repository/maven-public/"
+    }
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT'
+    implementation 'org.bstats:bstats-bukkit:3.0.2'
+}
+
+jar {
+    manifest {
+        attributes([
+            "Specification-Title": "domesticationinnovation",
+            "Specification-Vendor": "alexthe668",
+            "Specification-Version": "1.0",
+            "Implementation-Title": project.name,
+            "Implementation-Version": "${version}",
+            "Implementation-Vendor": "alexthe668",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
